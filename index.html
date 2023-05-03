@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="">
+    <section class="md:w-6/12 mx-auto">
+        <div class="border-2 rounded border-sky-500 p-5 mt-2">
+            <div class="flex space-x-5 justify-between">  
+                <div class="text-center">
+                    <button class="px-2 focus:outline-none focus-within:bg-sky-300" type="button" onclick="f2(this)"><i class="fa-solid fa-bold"></i></button>
+                    <button class="px-2 focus:outline-none focus-within:bg-sky-300" type="button" onclick="f3(this)"><i class="fa-solid fa-italic"></i></button>
+                    <button class="px-2 focus:outline-none focus-within:bg-sky-300" type="button" onclick="f4(this)"><i class="fa-solid fa-underline"></i></button>
+                </div>
+                <div class="text-center">
+                    <button class="px-2 focus:outline-none focus-within:bg-sky-300" type="button" onclick="f5(this)"><i class="fa-solid fa-align-left"></i></button>
+                    <button class="px-2 focus:outline-none focus-within:bg-sky-300" type="button" onclick="f6(this)"><i class="fa-solid fa-align-center"></i></button>
+                    <button class="px-2 focus:outline-none focus-within:bg-sky-300" type="button" onclick="f7(this)"><i class="fa-solid fa-align-right"></i></button>
+                    <button class="px-2 focus:outline-none focus-within:bg-sky-300" type="button" onclick="f8(this)"><i class="fa-solid fa-align-justify"></i></button>
+                </div>
+                <div class="text-center">
+                    <input class="w-10" id="font-size" type="number" value="16" onchange="f9(this)">
+                    <button class="px-2 focus:outline-none focus-within:bg-sky-300" type="button" onclick="f10(this)">aA</button>
+                    <button class="px-2 focus:outline-none focus-within:bg-sky-300" type="button" onclick="f11(this)">Aa</button>
+                    <input type="color" onchange="f12(this)" >
+                </div>
+            </div>
+            <div class="border-2 border-grey rounded dark:border-gray-80 mt-5">
+                <textarea id="editor" rows="8" class="block w-full p-1 text-sm text-gray-800 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Write an article..."></textarea>
+            </div>
+            
+        </div>
+        
+    </section>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
